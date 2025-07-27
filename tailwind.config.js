@@ -8,39 +8,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          green: '#00C896',
-          blue: '#0066FF',
-          orange: '#FF6B35',
-          purple: '#8B5CF6',
+        black: '#000000',
+        gray: {
+          900: '#111111',
+          600: '#666666',
+          400: '#999999',
+          200: '#e5e5e5',
+          100: '#f5f5f5',
         },
-        background: {
-          primary: '#FAFBFC',
-          secondary: '#F3F4F6',
-        },
-        text: {
-          primary: '#1F2937',
-          secondary: '#6B7280',
-          tertiary: '#9CA3AF',
-        },
+        white: '#ffffff',
+        // Minimal accent colors - use sparingly
+        green: '#22c55e',  // For Karma Farm
+        blue: '#3b82f6',   // For Write-It-Down
+        purple: '#8b5cf6', // For Focus Flow
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-out',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
+        // Use system font stack only
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
